@@ -18,11 +18,11 @@ package org.greenrobot.eventbus.meta;
 import org.greenrobot.eventbus.ThreadMode;
 
 public class SubscriberMethodInfo {
-    final String methodName;
-    final ThreadMode threadMode;
-    final Class<?> eventType;
-    final int priority;
-    final boolean sticky;
+    final String methodName;//方法名
+    final ThreadMode threadMode;//响应方法执行的线程模式
+    final Class<?> eventType;//事件类型
+    final int priority;//优先级
+    final boolean sticky;//是否是粘性事件
 
     public SubscriberMethodInfo(String methodName, Class<?> eventType, ThreadMode threadMode,
                                 int priority, boolean sticky) {
