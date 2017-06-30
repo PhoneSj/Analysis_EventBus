@@ -463,6 +463,9 @@ EventBus的代码分为三个过程：
 > 2.根据订阅的事件从subscriptionsByEventType（key为订阅事件，value为订阅者信息(封装有订阅者、响应方法)）移除该订阅者的订阅信息Subscription
 > 3.从typesBySubscriber中移除该订阅者订阅的事件
 
+
+![img](EventBus.pdf)
+
 ## 总结
 **最关键的两个数据：**
 
